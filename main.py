@@ -6,11 +6,10 @@ from stats import counter
 
 from stats import character_count
 
-characters = {character_count}
-
 def frankenstein_fetch():
 	text = reader("books/frankenstein.txt")
+	char_dict = character_count(text)
 	print(f"Found {counter(text)} total words")
-	print(characters)
+	print(char_dict)
 
 frankenstein_fetch()
